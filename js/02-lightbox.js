@@ -17,19 +17,7 @@ const photos = galleryItems.map(({ original, preview, description }) => {
 const galleryList = document.querySelector(".gallery");
 galleryList.insertAdjacentHTML("beforeend", photos.join(""));
 
-// galleryList.addEventListener("click", onImageClick);
-
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });
-// function onImageClick(evt) {
-//   evt.preventDefault();
-//   if (evt.target.nodeName !== "IMG") {
-//     console.log(evt.target);
-//   }
-
-//   //   const lightbox = new SimpleLightbox(".gallery a", {
-//   //     /* options */
-//   //   });
-// }
